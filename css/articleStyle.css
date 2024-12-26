@@ -1,0 +1,229 @@
+/* ----------------------------------
+   General Page Styling
+---------------------------------- */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #f8f9fa, #e9ecef);
+    color: #333;
+}
+
+/* ----------------------------------
+   HEADER (Hero) with Ken Burns
+---------------------------------- */
+.header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 90vw;            /* or 100vh if you want full viewport height */
+    min-height: 400px;
+    max-height: 900px;  
+    color: #eee;  
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    background: #1B2030;     /* fallback color */
+    border-bottom-left-radius: 40px; 
+    border-bottom-right-radius: 40px;
+    /* ensures pseudo-elements also get clipped by radius */
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%; 
+    z-index: 0;
+    /* Ken Burns background image */
+    background: 
+      url("https://images.unsplash.com/photo-1731532034431-be28681ed7b7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzQwMzk5NDF8&ixlib=rb-4.0.3&q=85")
+      center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Slow Ken Burns animation */
+    animation: grow 360s linear 0s infinite;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.15) 40%,
+      rgba(27,32,48,1) 100%
+    );
+    z-index: 1;
+}
+
+/* Ken Burns Keyframes */
+@keyframes grow {
+    0%   { transform: scale(1)   translateY(0);      }
+    50%  { transform: scale(1.2) translateY(-400px); }
+    100% { transform: scale(1)   translateY(0);      }
+}
+
+/* Header Content Layout */
+.header .header-content {
+    position: relative; 
+    z-index: 2;  /* above pseudo-elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+/* ----------------------------------
+   About the Author in Hero
+---------------------------------- */
+.hero-author {
+    margin-top: 20px;
+    padding: 20px;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #fff; 
+    text-align: center;
+    border-radius: 0;
+}
+
+.hero-author h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero-author .author-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #fff; /* White border around the circle */
+    object-fit: cover;
+}
+
+.hero-author h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-author p {
+    font-size: 16px;
+    color: #eee;
+    line-height: 1.6;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+/* ----------------------------------
+   Single Column Layout
+---------------------------------- */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* centers content horizontally */
+}
+
+.single-column {
+    flex: 0 1 800px; /* up to 800px wide, adjustable */
+}
+
+/* ----------------------------------
+   Remove the "card" styling 
+   from .content
+---------------------------------- */
+.content {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* If you still have an <img> in .content,
+   you can hide it if you like:
+.content img {
+    display: none; 
+}
+*/
+
+/* ----------------------------------
+   Article Body
+---------------------------------- */
+.article-body {
+    margin: 40px 0;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+.article-body p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #333;     /* dark text on light background */
+    text-align: justify;
+}
+
+/* ----------------------------------
+   "View other articles" button
+---------------------------------- */
+.btn.other-articles {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 20px;
+}
+.btn.other-articles:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+
+/* ----------------------------------
+   Footer
+---------------------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40;
+    color: #ffffff;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 4px solid #007bff;
+}
+
+/* ----------------------------------
+   Responsive
+---------------------------------- */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        display: block;
+    }
+    .single-column {
+        width: 100%;
+        flex: none;
+    }
+    .article-body p {
+        text-align: left; /* optional for small screens */
+        margin: 0 10px 20px;
+    }
+}

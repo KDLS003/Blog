@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Article</title>
+  <!-- Link to your updated CSS -->
+  <link rel="stylesheet" href="../css/articleStyle.css" />
+</head>
+<body>
+
+  <!-- Hero Header with Ken Burns effect -->
+  <div class="header">
+    <div class="header-content">
+      <!-- Populated by JSON -->
+      <h1 id="article-title">Loading...</h1>
+      <p id="article-subtitle"></p>
+
+      <!-- About the Author in hero (Populated by JSON) -->
+      <div class="about-author hero-author">
+        <h2>About the Author</h2>
+        <img id="author-image" alt="Author Image" class="author-image" />
+        <h3 id="author-name"></h3>
+        <p id="author-bio"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Single Container for article content -->
+  <div class="container">
+    <!-- Single Column Content -->
+    <div class="single-column">
+
+      <!-- Instead of a "card", just plain text. Remove the <img> for the article. -->
+      <section class="article-body">
+        <!-- Populated by JSON -->
+        <p id="article-content"></p>
+
+        <!-- New button linking to index.html -->
+        <p align="center">
+          <a href="../index.html" class="btn other-articles">View other articles</a>
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Group# Blog. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS for loading the article data from JSON -->
+  <script src="../js/articleLoader.js"></script>
+</body>
+</html>

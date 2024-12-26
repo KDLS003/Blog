@@ -1,0 +1,29 @@
+{
+    "1": {
+        "title": "Article 1 Title",
+        "subtitle": "Subtitle or Date for Article 1",
+        "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit blandit justo quis bibendum. Aenean massa nibh, suscipit a sem sit amet, auctor fringilla tellus. Nam interdum libero a pulvinar facilisis. Sed tristique egestas tortor, non laoreet eros hendrerit in. Fusce elit nulla, vehicula a tincidunt vel, sodales at nulla. Ut sed lorem eget lacus lobortis auctor. Morbi volutpat congue ipsum eget tincidunt. Cras accumsan auctor libero in tempus. Praesent dictum rutrum est, sed maximus urna vulputate at. Mauris posuere volutpat tellus, nec dapibus arcu semper quis. In ornare ut dui sed vehicula. Pellentesque condimentum neque non orci varius sodales. Curabitur nibh nulla, aliquam sed nulla eu, tincidunt tincidunt nunc. Suspendisse potenti. Nulla risus lacus, placerat et nisl ac, tincidunt consequat ex.",
+        
+        "Cras tempus orci ac quam convallis, ut sodales sem consequat. Fusce aliquam turpis non velit lobortis sodales. Praesent sollicitudin malesuada tempor. Aenean facilisis in est eget ultricies. Ut sollicitudin, orci nec feugiat elementum, magna lectus interdum felis, in dapibus leo est et eros. Suspendisse eu ligula feugiat, viverra felis ut, tempor sem. Aliquam interdum, elit pulvinar gravida condimentum, libero massa tempus purus, at auctor ante ipsum nec neque. Morbi tempor, magna eu consequat rhoncus, neque lectus mollis justo, ac rhoncus velit risus non mauris. Proin et finibus dui, non scelerisque nulla. Aliquam nec rutrum augue, quis mollis libero. Aliquam ultrices vel purus eu tincidunt. Donec auctor velit posuere risus facilisis consectetur. Cras sit amet justo non metus aliquet fringilla at ullamcorper est."
+        ],
+
+        "image": "../img/image1.jpg",
+        "author": {
+            "name": "John Doe",
+            "bio": "John Doe is a passionate writer with expertise in technology and innovation. He enjoys exploring complex topics and presenting them in a simple, engaging way.",
+            "image": "../img/author1.jpg"
+        }
+    },
+    "2": {
+        "title": "Article 2 Title",
+        "subtitle": "Subtitle or Date for Article 2",
+        "content": "This is the full content for Article 2. It includes detailed information about the topic.",
+        "image": "../img/image2.jpg",
+        "author": {
+            "name": "Jane Smith",
+            "bio": "Jane Smith is a seasoned journalist and author who specializes in science and the environment. She has written for several renowned publications.",
+            "image": "../img/author2.jpg"
+        }
+    }
+}
