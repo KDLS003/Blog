@@ -1,3 +1,4 @@
+
 /* Reset & Box-Sizing */
 * {
     box-sizing: border-box;
@@ -5,180 +6,132 @@
     padding: 0;
 }
 
-/* Body */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+}
+
+/* General Typography */
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f1f1f1;
+    font-family: "Roboto", Arial, sans-serif; /* Modern font */
+    background: #f9f9f9; /* Softer background */
     color: #333;
-    line-height: 1.6;
+    line-height: 1.8; 
+    font-size: 16px; 
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
 .header {
-    /* Cool dark gradient */
     background: linear-gradient(135deg, #141e30, #243b55);
-    
     color: #fff;
     text-align: center;
     padding: 60px 20px;
-  
-    /* Rounded bottom corners */
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-  
-    /* Subtle shadow under header */
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  
-    /* Space below the header so it doesn’t crowd content */
     margin-bottom: 30px;
-  }
-  
-  .header h2 {
-    font-size: 2.5rem;
+}
+
+.header h2 {
+    font-size: 3rem; /* Increased size for emphasis */
     font-weight: 700;
-    letter-spacing: 1px;
-    margin: 0; /* Remove default margin for a cleaner look */
-  }
-  
-  
-/* ROW - main layout container */
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+/* Main Layout Container */
 .row {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-    /* Float-based columns, same as before */
+    flex: 1;
 }
 
-/* LEFT COLUMN (Articles) */
+/* Left Column (Articles) */
 .leftcolumn {
     float: left;
     width: 70%;
-    padding-right: 20px; /* space between columns */
+    padding-right: 20px;
 }
 
-/* RIGHT COLUMN (Sidebar) */
+/* Right Column (Sidebar) */
 .rightcolumn {
     float: left;
     width: 30%;
 }
 
-/* CARD (General) */
+/* Card Styles */
 .card {
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 20px 0;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: box-shadow 0.3s ease;
 }
 
-/* Headings inside cards */
 .card h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 5px;
-}
-.card h3 {
-    font-size: 18px;
-    color: #333;
+    font-size: 2rem;
+    color: #243b55;
     margin-bottom: 10px;
+    font-weight: 600;
 }
+
 .card h5 {
-    font-size: 14px;
-    color: #777;
+    font-size: 1.2rem;
+    color: #555;
     margin-bottom: 15px;
 }
 
-/* Article link styling (if you want the entire card clickable) */
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Article Links */
 .article-link {
     text-decoration: none;
-    color: inherit; /* inherits color from .card */
+    color: inherit;
 }
 .article-link:hover .card {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-/* Fake image placeholder */
-.fakeimg {
-    background-color: #bbb;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #444;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    font-size: 16px;
+/* Sidebar Headings */
+.rightcolumn h2, .rightcolumn h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #243b55;
 }
 
-/* Paragraphs inside cards */
-.card p {
-    margin: 0;
+.rightcolumn p {
+    font-size: 1rem;
     color: #555;
-    font-size: 15px;
 }
 
-/* Hover effect on .card */
-.card:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-/* =========================
-   SCROLLBAR - WebKit Browsers
-   (Chrome, Edge, Safari)
-========================= */
-::-webkit-scrollbar {
-    width: 8px;               /* Make the scrollbar thinner */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #eee;         /* Track background color */
-    border-radius: 4px;       /* Round the track edges */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #243b55;      /* Thumb (scroll handle) color */
-    border-radius: 4px;       /* Round the thumb edges */
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #141e30;      /* Slightly darker on hover */
-  }
-  
-  /* =========================
-     SCROLLBAR - Firefox
-     (Partial support)
-  ========================= */
-  /* Make scrollbar thinner & set colors */
-  html {
-    scrollbar-width: thin;                /* "auto" or "thin" */
-    scrollbar-color: #243b55 #eee;        /* thumb color, track color */
-  }
-  
-
-/* FOOTER */
+/* Footer */
 .footer {
     background: #fff;
     text-align: center;
     padding: 15px;
-    margin-top: 30px;
     border-top: 1px solid #ddd;
 }
 .footer p {
+    font-size: 0.9rem;
     color: #666;
-    font-size: 14px;
 }
 
-/* CLEARFIX for .row */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* RESPONSIVE */
+/* Responsive Design */
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
