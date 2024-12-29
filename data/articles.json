@@ -1,18 +1,25 @@
 {
     "1": {
-        "title": "Article 1 Title",
-        "subtitle": "Subtitle or Date for Article 1",
+        "title": "University Days 2025: Sailing Through Excellence and Diversity ",
+        "subtitle": "Showcasing Angelite Spirit Through Competition and Creativity",
         "content": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit blandit justo quis bibendum. Aenean massa nibh, suscipit a sem sit amet, auctor fringilla tellus. Nam interdum libero a pulvinar facilisis. Sed tristique egestas tortor, non laoreet eros hendrerit in. Fusce elit nulla, vehicula a tincidunt vel, sodales at nulla. Ut sed lorem eget lacus lobortis auctor. Morbi volutpat congue ipsum eget tincidunt. Cras accumsan auctor libero in tempus. Praesent dictum rutrum est, sed maximus urna vulputate at. Mauris posuere volutpat tellus, nec dapibus arcu semper quis. In ornare ut dui sed vehicula. Pellentesque condimentum neque non orci varius sodales. Curabitur nibh nulla, aliquam sed nulla eu, tincidunt tincidunt nunc. Suspendisse potenti. Nulla risus lacus, placerat et nisl ac, tincidunt consequat ex.",
-        
-        "Cras tempus orci ac quam convallis, ut sodales sem consequat. Fusce aliquam turpis non velit lobortis sodales. Praesent sollicitudin malesuada tempor. Aenean facilisis in est eget ultricies. Ut sollicitudin, orci nec feugiat elementum, magna lectus interdum felis, in dapibus leo est et eros. Suspendisse eu ligula feugiat, viverra felis ut, tempor sem. Aliquam interdum, elit pulvinar gravida condimentum, libero massa tempus purus, at auctor ante ipsum nec neque. Morbi tempor, magna eu consequat rhoncus, neque lectus mollis justo, ac rhoncus velit risus non mauris. Proin et finibus dui, non scelerisque nulla. Aliquam nec rutrum augue, quis mollis libero. Aliquam ultrices vel purus eu tincidunt. Donec auctor velit posuere risus facilisis consectetur. Cras sit amet justo non metus aliquet fringilla at ullamcorper est."
+            "Holy Angel University is set to celebrate one of its most anticipated annual events: University Days 2025. With the theme “Agos: Paglayag ng mga Tanyag”—a title that symbolizes the Angelites’ journey of distinction and resilience—this year’s festivities promise a vibrant showcase of talent, creativity, and collaboration.",
+            "The theme combines the words “Agos” (flow), “Paglayag” (sailing), and “Tanyag” (outstanding), capturing the grand voyage of students navigating life’s currents with excellence. This year’s University Days also honor the brave Filipinos safeguarding our maritime rights in the West Philippine Sea. The celebration aims to inspire students to champion justice, freedom, and advocacy for the nation’s territorial integrity.",
+            "In a nod to the Philippines' rich cultural heritage, departments will embody the spirit of “Isla” (island), each representing unique strengths, talents, and charm. Together, these islands form a vibrant archipelago—a testament to diversity as the foundation of excellence and unity.",
+            "### Thrilling Competitions to Watch:",
+            "1. **Esports Events**: Experience the electrifying world of gaming as Esports takes center stage. Teams will battle it out in intense matches, showcasing strategy, skill, and passion. This event is a celebration of the growing gaming community and its power to unite players across different backgrounds.",
+            "2. **Sports Events**: The sports competitions highlight more than just athletic prowess. They embody resilience, teamwork, and camaraderie. Whether on the court, field, or track, Angelites will demonstrate the drive and determination that set them apart.",
+            "3. **Academic Events**: For intellectuals, academic events provide a platform to shine. From mental math contests to thought-provoking TED talks, these competitions celebrate knowledge, creativity, and critical thinking. Participants will spark new ideas and inspire others to reach greater heights.",
+            "4. **Non-Academic Events**: Creativity takes the spotlight in non-academic competitions. Dance performances, musical renditions, and other artistic displays celebrate the diverse talents of Angelites. Each performance contributes to the vibrance of the University Days experience.",
+            "5. **HIMIG Concert**: A musical expedition featuring an incredible lineup of performers such as Johnoy Danao, Over October, and The Ridleys. Proceeds from the concert will be donated to support advocacy programs.",
+            "University Days 2025 invites all Angelites to embark on this extraordinary journey of collaboration, pride, and celebration. Through sports, arts, academics, and advocacy, the event emphasizes the importance of unity in diversity and resilience in the face of challenges. Mark your calendars and prepare to set sail with your fellow Angelites!"
         ],
 
-        "image": "../img/image1.jpg",
+        "image": "../img/charles_agos.jpg",
         "author": {
-            "name": "John Doe",
-            "bio": "John Doe is a passionate writer with expertise in technology and innovation. He enjoys exploring complex topics and presenting them in a simple, engaging way.",
-            "image": "../img/author1.jpg"
+            "name": "Charles Bryan Lansang",
+            "bio": "Charles is a dedicated network administration student passionate about building and managing secure, efficient networks. He has a knack for creative mind and thrives in fast-paced environments.",
+            "image": "../img/charlespic.jpg"
         }
     },
     "2": {

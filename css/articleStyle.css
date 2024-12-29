@@ -8,6 +8,7 @@ body {
     padding: 0;
     background: linear-gradient(180deg, #f8f9fa, #e9ecef);
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
 }
 
 /* ----------------------------------
@@ -17,15 +18,14 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 90vw;            /* or 100vh if you want full viewport height */
-    min-height: 400px;
-    max-height: 900px;  
-    color: #eee;  
+    height: 70vw;            /* Reduced height for mobile */
+    min-height: 300px;       /* Adjust for smaller screens */
+    max-height: 600px;       /* Prevent excessive scaling */
+    color: #eee;
     text-shadow: 0 2px 6px rgba(0,0,0,0.5);
-    background: #1B2030;     /* fallback color */
-    border-bottom-left-radius: 40px; 
-    border-bottom-right-radius: 40px;
-    /* ensures pseudo-elements also get clipped by radius */
+    background: #1B2030;
+    border-bottom-left-radius: 30px; 
+    border-bottom-right-radius: 30px;
     overflow: hidden;
 }
 
@@ -35,16 +35,16 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200%; 
+    height: 200%; /* Larger height for scaling */
     z-index: 0;
-    /* Ken Burns background image */
-    background: 
-      url("https://images.unsplash.com/photo-1731532034431-be28681ed7b7?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzQwMzk5NDF8&ixlib=rb-4.0.3&q=85")
-      center top no-repeat;
+
+    /* Use the dynamic variable for the Ken Burns image */
+    background: var(--ken-burns-image, #1B2030) center top no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    /* Slow Ken Burns animation */
-    animation: grow 360s linear 0s infinite;
+
+    /* Adjust Ken Burns animation */
+    transform-origin: center center; /* Ensure scaling from the center */
+    animation: grow 30s ease-in-out infinite; /* Adjust speed and effect */
 }
 
 .header::after {
@@ -55,126 +55,168 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.15) 40%,
-      rgba(27,32,48,1) 100%
+        to bottom,
+        rgba(0, 0, 0, 0.15) 40%,
+        rgba(27, 32, 48, 1) 100%
     );
     z-index: 1;
 }
 
 /* Ken Burns Keyframes */
 @keyframes grow {
-    0%   { transform: scale(1)   translateY(0);      }
-    50%  { transform: scale(1.2) translateY(-400px); }
-    100% { transform: scale(1)   translateY(0);      }
+    0% {
+        transform: scale(1) translateY(0); /* Start in place */
+    }
+    50% {
+        transform: scale(1.2) translateY(-10%); /* Slight upward scaling */
+    }
+    100% {
+        transform: scale(1) translateY(0); /* Return to original position */
+    }
 }
 
-/* Header Content Layout */
+
+
+
 .header .header-content {
     position: relative; 
-    z-index: 2;  /* above pseudo-elements */
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100%;
-    padding: 40px;
+    padding: 20px; /* Reduced padding for mobile */
     text-align: center;
 }
 
 /* ----------------------------------
-   About the Author in Hero
+   Hero Author Adjustments
 ---------------------------------- */
 .hero-author {
-    margin-top: 20px;
-    padding: 20px;
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    color: #fff; 
+    margin-top: 15px;
+    padding: 10px;
+    background: none;
+    color: #fff;
     text-align: center;
     border-radius: 0;
 }
 
 .hero-author h2 {
-    font-size: 22px;
+    font-size: 18px; /* Smaller font size for mobile */
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .hero-author .author-image {
-    width: 110px;
-    height: 110px;
+    width: 90px; /* Reduced size */
+    height: 90px;
     border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #fff; /* White border around the circle */
+    margin-bottom: 10px;
+    border: 2px solid #fff; /* Adjusted border size */
     object-fit: cover;
 }
 
 .hero-author h3 {
-    font-size: 20px;
+    font-size: 16px; /* Reduced size */
     color: #fff;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .hero-author p {
-    font-size: 16px;
+    font-size: 14px; /* Smaller font */
     color: #eee;
     line-height: 1.6;
-    max-width: 600px; 
+    max-width: 300px; /* Adjusted for mobile */
     margin: 0 auto;
 }
 
 /* ----------------------------------
-   Single Column Layout
----------------------------------- */
-.container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center; /* centers content horizontally */
-}
-
-.single-column {
-    flex: 0 1 800px; /* up to 800px wide, adjustable */
-}
-
-/* ----------------------------------
-   Remove the "card" styling 
-   from .content
----------------------------------- */
-.content {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* If you still have an <img> in .content,
-   you can hide it if you like:
-.content img {
-    display: none; 
-}
-*/
-
-/* ----------------------------------
-   Article Body
+   Article Body Adjustments
 ---------------------------------- */
 .article-body {
-    margin: 40px 0;
-    text-align: center;
-    line-height: 1.8;
+    margin: 40px auto;
+    padding: 30px 20px; /* Improved spacing */
+    background: none; /* No card background */
+    line-height: 1.8; /* Slightly reduced line height for tighter text */
+    max-width: 750px; /* Centered and narrower width for better readability */
+    color: #333; /* Standard readable text color */
+    font-family: "Georgia", serif; /* Classic font similar to the example */
+    font-size: 1.125rem; /* Font size aligned with example */
 }
 
-
+/* Paragraph Styling */
 .article-body p {
-    max-width: 700px;
-    margin: 0 auto 20px;
-    color: #333;     /* dark text on light background */
-    text-align: justify;
+    margin: 1.5em 0; /* Create vertical spacing */
+    text-align: left; /* Left-aligned text */
+    line-height: 1.8; /* Comfortable line spacing */
+    color: #2c2c2c; /* Softer black */
+    font-size: 1.2rem; /* Medium font size */
+    font-weight: 400; /* Regular weight for natural reading */
+}
+
+/* Emphasized Text */
+.article-body em {
+    font-style: italic;
+    color: #000; /* Bold and highlighted italics */
+}
+
+/* Bolded Text */
+.article-body strong {
+    font-weight: 700;
+    color: #000; /* Black bold */
+}
+
+/* ----------------------------------
+   Blockquote Styling
+---------------------------------- */
+.article-body blockquote {
+    margin: 1.5em 0; /* Similar spacing as paragraphs */
+    padding: 1em 1.5em;
+    border-left: 4px solid #007bff; /* Blue border */
+    background: #f9f9f9; /* Subtle background for contrast */
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555; /* Slightly dimmed text */
+}
+
+/* ----------------------------------
+   Lists Styling
+---------------------------------- */
+.article-body ul, .article-body ol {
+    margin: 1.5em 0;
+    padding-left: 2em; /* Indented lists */
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.article-body ul li, .article-body ol li {
+    margin-bottom: 0.5em; /* Space between items */
+}
+
+/* ----------------------------------
+   Highlight Sections
+---------------------------------- */
+.article-body .highlight {
+    font-weight: bold;
+    color: #007bff;
+    background: #eef5ff;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* ----------------------------------
+   Heading Styling
+---------------------------------- */
+.article-body h2, .article-body h3 {
+    color: #0056b3;
+    margin: 1.5em 0 0.5em;
+    font-weight: 700;
+    line-height: 1.5;
 }
 
 /* ----------------------------------
@@ -186,44 +228,72 @@ body {
     color: #fff;
     border: 2px solid #007bff;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Adjusted padding for better visibility */
+    font-family: "Segoe UI", Arial, sans-serif; /* Ensures clear readability */
     font-weight: 600;
+    font-size: 13px; /* Slightly larger font for emphasis */
     text-decoration: none;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, transform 0.2s; /* Added transform for hover effect */
     margin-top: 20px;
 }
 .btn.other-articles:hover {
     background: #0056b3;
     border-color: #0056b3;
+    transform: scale(1.05); /* Adds a subtle zoom effect on hover */
 }
 
 /* ----------------------------------
-   Footer
+   Footer Adjustments
 ---------------------------------- */
 footer {
     text-align: center;
     padding: 20px;
     background: #343a40;
     color: #ffffff;
-    margin-top: 40px;
     font-size: 14px;
-    border-top: 4px solid #007bff;
+    border-top: 3px solid #007bff;
 }
 
 /* ----------------------------------
-   Responsive
+   Responsive Adjustments for Smaller Devices
 ---------------------------------- */
 @media (max-width: 768px) {
-    .container {
-        width: 95%;
-        display: block;
+    /* About Author Section */
+    .hero-author {
+        margin-top: 20px;
+        padding: 15px;
+        text-align: center;
+        background: #fff; /* Add white background */
+        border-radius: 8px; /* Rounded edges */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        color: #333; /* Neutral font color */
     }
-    .single-column {
-        width: 100%;
-        flex: none;
+
+    .hero-author h2 {
+        font-size: 1.3rem; /* Slightly smaller font */
+        margin-bottom: 10px;
+        color: #0056b3; /* Blue title for distinction */
     }
-    .article-body p {
-        text-align: left; /* optional for small screens */
-        margin: 0 10px 20px;
+
+    .hero-author .author-image {
+        width: 80px; /* Reduce image size */
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .hero-author h3 {
+        font-size: 1rem; /* Adjust size for smaller screens */
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .hero-author p {
+        font-size: 0.9rem; /* Smaller font for better fit */
+        line-height: 1.4;
+        color: #555; /* Softer color for text */
     }
 }
+
+
+
+
