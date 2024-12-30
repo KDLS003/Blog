@@ -245,13 +245,20 @@ body {
 /* ----------------------------------
    Footer Adjustments
 ---------------------------------- */
-footer {
+.footer {
+    background: #f8f9fa; /* Light background for contrast */
     text-align: center;
     padding: 20px;
-    background: #343a40;
-    color: #ffffff;
-    font-size: 14px;
-    border-top: 3px solid #007bff;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+.footer p {
+    font-size: 0.9rem;
+    color: #555; /* Slightly darker text for readability */
+    margin: 0;
+}
+.footer p strong {
+    color: #007bff; /* Highlighted color for the blog name */
 }
 
 /* ----------------------------------
@@ -261,6 +268,7 @@ footer {
     /* About Author Section */
     .hero-author {
         margin-top: 20px;
+        margin-bottom: 30px; /* Add spacing at the bottom */
         padding: 15px;
         text-align: center;
         background: #fff; /* Add white background */
@@ -293,6 +301,7 @@ footer {
         color: #555; /* Softer color for text */
     }
 }
+
 
 
 

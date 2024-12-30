@@ -61,6 +61,21 @@ fetch('../data/articles.json')
       document.getElementById('article-content').textContent = "There was an error loading the article data.";
   });
 
+  // confirmation message for the form
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    fetch(this.action, {
+      method: "POST",
+      body: new FormData(this),
+    })
+      .then(() => {
+        alert("Thank you! Your message has been sent.");
+        this.reset();
+      })
+      .catch(() => alert("Oops! Something went wrong. Please try again."));
+  });
+  
+
 
   // Reposition "About the Author" section on smaller screens
 function repositionAuthorSection() {

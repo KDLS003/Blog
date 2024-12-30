@@ -98,6 +98,57 @@ body {
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background: #fff;
+}
+
+/* Submit Button */
+.btn-submit {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+
 /* Article Links */
 .article-link {
     text-decoration: none;
@@ -121,15 +172,22 @@ body {
 
 /* Footer */
 .footer {
-    background: #fff;
+    background: #f8f9fa; /* Light background for contrast */
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
 }
 .footer p {
     font-size: 0.9rem;
-    color: #666;
+    color: #555; /* Slightly darker text for readability */
+    margin: 5px 0; /* Add spacing between paragraphs */
 }
+.footer p strong {
+    color: #007bff; /* Highlighted color for the blog name */
+}
+
+
 
 /* Responsive Design */
 @media screen and (max-width: 800px) {

@@ -22,15 +22,32 @@
             "image": "../img/charlespic.jpg"
         }
     },
-    "2": {
-        "title": "Article 2 Title",
-        "subtitle": "Subtitle or Date for Article 2",
-        "content": "This is the full content for Article 2. It includes detailed information about the topic.",
-        "image": "../img/image2.jpg",
-        "author": {
-            "name": "Jane Smith",
-            "bio": "Jane Smith is a seasoned journalist and author who specializes in science and the environment. She has written for several renowned publications.",
-            "image": "../img/author2.jpg"
-        }
+"2": {
+    "title": "Riding Smart: A Motorcycle Accident That Taught Me a Lesson",
+    "subtitle": "A reflective account on motorcycle safety and second chances",
+    "content": [
+        "It was a typical evening, or so I thought. My friends and I were craving *pares*, a dish that feels like a warm hug at any time of the day or night. It was 3 a.m., and the roads were silent, a perfect setting for a peaceful ride. We grabbed our motorcycles and headed toward the nearest pares restaurant. I had no idea that this ride would leave me with scars, both physical and emotional—and a deeper understanding of motorcycle safety.",
+        "The streets were quiet as we cruised through the cool night air. The hum of our motorcycles was the only sound accompanying us. Somewhere near SM Telebastagan, it happened. A motorcycle cut into my lane unexpectedly, forcing me to hit the brakes. Panic set in. My motorcycle didn't have ABS (Anti-lock Braking System), and to make matters worse, the road was littered with sand. The front tire locked, and my bike slid uncontrollably.",
+        "The world spun, and I hit the ground with a force that knocked the breath out of me. My motorcycle slid to a halt a few meters away. Lying on the pavement, I felt an immediate rush of pain. My helmet had done its job, protecting my head from any serious injury. However, the rest of my body bore the brunt of the accident. My exposed arms and legs—clad only in a T-shirt and shorts—were scraped and bloodied. I later learned that I needed multiple stitches for the deeper wounds.",
+        "As I sat on the side of the road, shaken but grateful, I realized how much worse it could have been. There was no other vehicle involved, and for that, I was incredibly thankful. That moment became a turning point in my life. A second chance to approach motorcycle safety with the seriousness it demands.",
+        "________________________________________",
+        "### Five Essential Motorcycle Safety Tips",
+        "1. **Always Wear a Full-Face Helmet**: Helmets are more than just a legal requirement; they’re lifesavers. On the night of my accident, I was wearing a half-faced helmet. While it protected my head, the exposed part of my face contacted the asphalt, leaving scratches that could have been prevented with a full-faced helmet. Always opt for a full-faced helmet to ensure maximum protection for your entire head and face. Choose one that fits well, meets safety standards, and doesn’t compromise on quality.",
+        "2. **Wear Proper Riding Gear**: My T-shirt and shorts offered no protection. If I had worn a jacket, gloves, and riding pants, my injuries could have been significantly less severe. Invest in gear made from durable materials like Kevlar or leather.",
+        "3. **Maintain Your Motorcycle**: The absence of ABS on my bike played a huge role in my accident. Regular maintenance can prevent mechanical failures. Check your brakes, tires, and lights before every ride to ensure they are in optimal condition.",
+        "4. **Pay Attention to Road Conditions**: Sand, gravel, and wet surfaces can spell disaster for riders. Always be aware of the road ahead, especially during night rides, and reduce speed when the surface is uneven or slippery.",
+        "5. **Practice Defensive Riding**: Assume that other drivers can’t see you. Maintain a safe distance, anticipate sudden movements, and avoid weaving between vehicles. Defensive riding can often mean the difference between a close call and a collision.",
+        "________________________________________",
+        "### A Wake-Up Call",
+        "The experience left me with scars but also a renewed sense of responsibility. Riding a motorcycle is exhilarating, but it’s not something to be taken lightly. Every decision, from the gear you wear to the speed you maintain, can determine whether you arrive safely at your destination or not.",
+        "I encourage every rider to think about their safety before hitting the road. If my story resonates with even one person and prevents an accident, then the pain and lessons I endured will have been worth it."
+    ],
+    "image": "../img/kenneth2.jpg",
+    "author": {
+        "name": "Kenneth David L. Santos",
+        "bio": "Kenneth is a 21-year-old Bachelor of Science in Cybersecurity student passionate about safeguarding digital environments. With a keen interest in network security and ethical hacking, he strives to develop innovative solutions to modern cyber threats. Beyond academics, Kenneth enjoys hands-on projects that challenge his technical skills and creativity.",
+        "image": "../img/Kenneth_pic.jpg"
     }
+}
+
 }
