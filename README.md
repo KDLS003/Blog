@@ -1,61 +1,94 @@
 # The Angelites Blog
 
-Welcome to **The Angelites Blog**, a project created as part of our academic requirements at **Holy Angel University**. This website showcases articles written by students on various topics, designed to demonstrate our understanding of writing principles, web design, and dynamic content creation.
+Welcome to **The Angelites Blog**, a project created as part of the **Technical Writing for Information Technology Education** course at **Holy Angel University**. This website showcases articles written by students to demonstrate their understanding of writing principles, web design, and dynamic content creation in the context of technical communication.
 
 ---
 
-## Purpose of the Project
+## 📜 Purpose of the Project
 
 This project was developed to:
-- Showcase well-written articles on diverse topics.
-- Apply the lessons learned in class about writing, grammar, and mechanics.
-- Demonstrate basic web development skills, including responsive design and dynamic content.
+- **Showcase well-written articles**: Students apply the lessons learned in class about writing, grammar, and mechanics.
+- **Demonstrate technical skills**: This includes responsive web design, dynamic content creation, and user-friendly navigation.
+- **Enhance learning**: Students explore and implement key concepts such as Subject-Verb Agreement, Passive Voice, and Parallelism in their writing.
 
 ---
 
-## How to View the Website
+## 🖥️ View the Website
 
-Visit the website: [The Angelites Blog](https://github.com/KDLS003/Blog_website)
+To explore the website, open the following link in your web browser:  
+**[The Angelites Blog](https://kdls003.github.io/Blog/index.html)**
 
 ---
 
-## Explore the Content
+## 📰 Explore the Content
 
-Navigate through the homepage to see the articles available. Click on any article to read it in detail. Use the "Contact Us" section to reach out or leave comments on the articles.
-
-### Contents of the Website
-- **Articles**: Each article is written by a student and includes:
+Navigate through the homepage to see all available articles. Each article is:
+- Written by a student and includes:
   - A clear title and subtitle.
-  - Detailed content with proper grammar and mechanics.
-  - Images that complement the article's topic.
-- **Contact Form**: A simple form is available on the "Contact Us" page, allowing visitors to send a message.
-- **Design Features**:
-  - The website adapts to different screen sizes, so it works well on both computers and mobile devices.
+  - Detailed, well-researched content with proper grammar and mechanics.
+  - Images that complement the article’s topic.
+- **Interactive Features**:
+  - A simple "Contact Us" form for questions or feedback.
 
 ---
 
-## How the Project is Organized
+## ✏️ Writing Requirements
 
-The website is organized into folders and files:
-1. **Homepage**: The main page that lists all the articles.
-2. **Articles**: Individual pages for each article.
-3. **Images**: A folder containing pictures used in the articles.
-4. **CSS and JavaScript**: These are the files that make the website look and work as it does.
+Each article adheres to the content and writing standards outlined in the course:
+
+### Content Requirements
+- **Individual Articles**:
+  - Each student selected a topic of their choice relevant to their interests or studies.
+  - Articles are well-researched, original, and between 500-700 words in length.
+
+### Writing Application
+- The following lessons were applied:
+  - Subject-Verb Agreement (SVA)
+  - Passive Voice (Personal and Impersonal)
+  - Relative Pronouns
+  - Writing Process and Prewriting Strategies
+  - Parallelism
+  - Dangling and Misplaced Modifiers
+
+### Grammar and Mechanics
+- Proper grammar, punctuation, spelling, and sentence structure were ensured throughout the articles.
 
 ---
 
-## Important Notes
+## 🎨 Design Features
 
-This project is meant for **educational purposes only**. It cannot be used for commercial or profitable purposes outside the university. The content and design belong to the rightful owners and are part of our academic work.
+The website is designed to adapt to different screen sizes, ensuring compatibility across devices. It includes:
+- **Homepage**: Lists all articles.
+- **Article Pages**: Individual pages for each article.
+- **Contact Form**: Visitors can send feedback using a third-party service.
 
 ---
 
-## How to Provide Feedback
+## 📂 How the Project is Organized
+
+The website is structured into folders for easy navigation and management:
+- **Homepage**: The main page that lists all the articles.
+- **Articles**: Individual pages for each article.
+- **Images**: A folder containing images used in the articles.
+- **CSS and JavaScript**: These files manage the design and functionality of the website.
+- **Data (JSON)**: Stores article content and dynamically displays it on the website.
+
+---
+
+## ⚠️ Important Notes
+
+This project is for **educational purposes only** and is part of our academic work. It:
+- Cannot be used for commercial or profitable purposes outside the university.
+- Belongs to the rightful creators and Holy Angel University.
+
+---
+
+## 💬 Feedback and Questions
 
 If you have any feedback or questions about the project:
-- Use the "Contact Us" form on the website.
-- You can also reach me directly through email at **klsantos2@student.hau.edu.ph**.
+- Use the **Contact Us** form on the website.
+- Alternatively, reach out via email directly through the form integration or email at **klsantos2@student.hau.edu.ph**.
 
 ---
 
-We hope you enjoy exploring **The Angelites Blog**! Thank you for reviewing our work.
+Thank you for exploring **The Angelites Blog**. We hope this project demonstrates our growth and learning in **Technical Writing for Information Technology Education**!
